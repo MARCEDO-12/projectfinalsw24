@@ -42,7 +42,7 @@ document.querySelector(".sign-in form").addEventListener("submit", function (e) 
         alert("Welcome " + savedUser.name + "!");
         localStorage.setItem("isLoggedIn", "true");
 
-        window.location.href = "../HTML/system.html"; 
+        window.location.href = "./HTML/system.html"; 
     } else {
         alert("Incorrect email or password");
     }
