@@ -9,3 +9,7 @@ registerBtn.addEventListener("click", () => {
 loginBtn.addEventListener("click", () => {
     container.classList.remove("active");
 });
+// ឆែកមើលថាបាន Login ឬនៅ? បើមិនទាន់ទេ បណ្តេញទៅកាន់ទំព័រ Login វិញ
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "../index.html"; 
+}
