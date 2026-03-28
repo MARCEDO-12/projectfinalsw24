@@ -47,15 +47,4 @@ document.querySelector(".sign-in form").addEventListener("submit", function (e) 
         alert("Incorrect email or password");
     }
 });
-// ឆែកមើលថាបាន Login ឬនៅ
-if (localStorage.getItem("isLoggedIn") !== "true") {
-    alert("សូមចូលប្រើប្រាស់ជាមុនសិន!");
-    window.location.href = "../index.html"; // ត្រឡប់ទៅទំព័រដើម
-}
-
-// បង្ហាញឈ្មោះអ្នកប្រើប្រាស់ (Optional)
-const user = JSON.parse(localStorage.getItem("currentUser"));
-if (user) {
-    console.log("Logged in as: " + user.name);
-}
 
